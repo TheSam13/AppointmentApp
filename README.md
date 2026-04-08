@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# Appointment Booking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application that allows users to seamlessly book and manage appointments with various service providers.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **User Authentication:** Simple mock login/logout flow using React Context and AsyncStorage.
+- **Provider Listing:** View available service providers (Doctors, Lawyers, Stylists, etc.).
+- **Appointment Scheduling:** Select a provider, view available time slots, and confirm a booking.
+- **Appointment Management:** View a list of upcoming booked appointments and cancel them if necessary.
 
+## Tech Stack
+
+- React Native (Expo)
+- React Navigation (Native Stack & Bottom Tabs)
+- Context API for State Management
+- AsyncStorage (for mock data persistence)
+
+## Assumptions
+
+- For the scope of this 5-7 day sprint assignment, authentication is mocked without a backend server. Entering any username will log the user in.
+- Data (providers and time slots) is hardcoded into the `AppContext` state manager to simulate an API payload.
+- Basic UI elements from standard React Native are used for broad compatibility across Android devices.
+
+## Installation & Running Locally
+
+1. Clone the repository / Unzip the source code.
+2. Navigate to the project directory:
    ```bash
-   npm install
+   cd AppointmentApp
    ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
